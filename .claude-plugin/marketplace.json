@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "Claude-Plugins-Official",
+  "description": "Community channel plugins for Claude Code — WeChat, and more.",
+  "owner": {
+    "name": "zerolong",
+    "email": "zerolong@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "wechat",
+      "description": "WeChat (微信) channel plugin — personal WeChat messaging via iLink Bot API with full media support",
+      "category": "productivity",
+      "source": "./plugins/wechat"
+    }
+  ]
+}

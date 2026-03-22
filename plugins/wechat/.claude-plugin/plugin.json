@@ -1,0 +1,6 @@
+{
+  "name": "wechat",
+  "description": "WeChat (微信) channel plugin for Claude Code — send and receive messages, images, voice, files, and video via personal WeChat through the iLink Bot API.",
+  "version": "0.1.0",
+  "keywords": ["wechat", "weixin", "messaging", "channel", "ilink", "mcp"]
+}
