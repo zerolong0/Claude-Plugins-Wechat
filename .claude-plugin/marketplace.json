@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "Claude-Plugins-Official",
+  "name": "Claude-Plugins-Wechat",
   "description": "Community channel plugins for Claude Code — WeChat, and more.",
   "owner": {
     "name": "zerolong",

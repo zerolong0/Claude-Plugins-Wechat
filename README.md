@@ -1,4 +1,4 @@
-# Claude-Plugins-Official
+# Claude-Plugins-Wechat
 
 Community channel plugins for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
