@@ -19,9 +19,21 @@ cd plugins/wechat
 bun install
 ```
 
+**Optional: register `cc-wechat` as a global command**
+
+```bash
+bun install -g .
+```
+
+This adds `cc-wechat` to your PATH so you can run `cc-wechat`, `cc-wechat daemon`, `cc-wechat status`, etc. from anywhere.
+
 ### 2. Login
 
 ```bash
+# If installed globally:
+cc-wechat login
+
+# Or directly:
 bun server.ts login
 ```
 
@@ -90,20 +102,22 @@ For all-day operation, use the launch script:
 
 ```bash
 # Foreground (interactive)
-./launch.sh
+cc-wechat
 
 # Background daemon (tmux + auto-restart)
-./launch.sh daemon
+cc-wechat daemon
 
 # Check status
-./launch.sh status
+cc-wechat status
 
 # View logs
-./launch.sh logs
+cc-wechat logs
 
 # Stop
-./launch.sh stop
+cc-wechat stop
 ```
+
+> If not installed globally, use `./cc-wechat.sh` instead.
 
 The daemon automatically restarts Claude Code if it exits, with exponential backoff.
 
