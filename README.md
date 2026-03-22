@@ -49,16 +49,6 @@ Done. Send a WeChat message and Claude Code responds.
 | Daemon mode | tmux auto-restart with health monitoring |
 | Typing indicator | Real-time "typing..." status |
 
-### How It Differs from cc-connect
-
-| | cc-connect | This Plugin |
-|---|---|---|
-| Architecture | External bridge → `claude -p` | MCP channel inside Claude Code |
-| Claude capabilities | Limited (text only, no tools) | Full (Read, Edit, Bash, Grep, etc.) |
-| Context | New process per message | Persistent session |
-| Media | Basic text + images | Full: image, voice, file, video |
-| CDN encryption | None | AES-128-ECB |
-
 ### Documentation
 
 See [plugins/wechat/README.md](./plugins/wechat/README.md) for complete setup guide, access control, daemon mode, troubleshooting, and architecture details.
@@ -117,16 +107,6 @@ claude --channels plugin:wechat@claude-plugins-official
 | 权限控制 | 配对码 / 白名单 / 禁用 |
 | 守护进程 | tmux 自动重启 + 健康监控 |
 | 打字状态 | 实时「正在输入...」 |
-
-### 与 cc-connect 的区别
-
-| | cc-connect | 本插件 |
-|---|---|---|
-| 架构 | 外部桥接 → `claude -p` | MCP 频道，运行在 Claude Code 内部 |
-| Claude 能力 | 受限（仅文本，无工具） | 完整（Read、Edit、Bash、Grep 等） |
-| 上下文 | 每条消息新进程 | 持久会话 |
-| 媒体 | 基础文本+图片 | 全类型：图片、语音、文件、视频 |
-| CDN 加密 | 无 | AES-128-ECB |
 
 ### 详细文档
 

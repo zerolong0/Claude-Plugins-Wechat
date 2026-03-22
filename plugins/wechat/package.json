@@ -4,11 +4,14 @@
   "description": "WeChat channel plugin for Claude Code",
   "license": "MIT",
   "type": "module",
-  "bin": "./server.ts",
+  "bin": {
+    "cc-wechat": "./cc-wechat.sh"
+  },
   "scripts": {
     "start": "bun install --no-summary && bun server.ts",
     "dev": "bun --watch server.ts",
-    "login": "bun server.ts login"
+    "login": "bun server.ts login",
+    "postinstall": "node -e \"const{execSync:e}=require('child_process'),p=require('path').resolve(__dirname,'cc-wechat.sh');try{e('chmod +x '+p)}catch{}\""
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
